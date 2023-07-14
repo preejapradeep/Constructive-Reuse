@@ -1,0 +1,663 @@
+{
+    "/Tabular/LIME": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#LIME",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904",
+            "http://semanticscience.org/resource/SIO_000419"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001480"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification",
+            "http://www.w3id.org/iSeeOnto/aimodel#Regression"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#PyTorch",
+            "http://www.w3id.org/iSeeOnto/explainer#Sklearn",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow1",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow2"
+        ]
+    },
+    "/Images/Anchors": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Anchor",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#image",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Anchor_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000081"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001480"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Images/Counterfactuals": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Wachter",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#image",
+        "explanation_type": "https://purl.org/heals/eo#CounterfactualExplanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000081"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow2"
+        ]
+    },
+    "/Images/GradCamTorch": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Wachter",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#image",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Saliency_Map",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#modelSpecific",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000081"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Linearithmic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0017046"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#PyTorch"
+        ]
+    },
+    "/Images/LIME": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#LIME",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#image",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000081"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#PyTorch",
+            "http://www.w3id.org/iSeeOnto/explainer#Sklearn",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow1",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow2"
+        ]
+    },
+    "/Tabular/ALE": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#ALE",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#global",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#model",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Linearithmic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification",
+            "http://www.w3id.org/iSeeOnto/aimodel#Regression"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Tabular/Anchors": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Anchor",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Anchor_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904",
+            "http://semanticscience.org/resource/SIO_000651"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483",
+            "http://purl.obolibrary.org/obo/OMIT_0001480"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Tabular/DicePrivate": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#DiCE",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "https://purl.org/heals/eo#CounterfactualExplanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000419"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow1",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow2"
+        ]
+    },
+    "/Tabular/DicePublic": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#DiCE",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "https://purl.org/heals/eo#CounterfactualExplanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000419"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#PyTorch",
+            "http://www.w3id.org/iSeeOnto/explainer#Sklearn",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow1",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow2"
+        ]
+    },
+    "/Tabular/DisCERN": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#DisCERN",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "https://purl.org/heals/eo#CounterfactualExplanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000419"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Sklearn"
+        ]
+    },
+    "/Tabular/Importance": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Feature_Relevance",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#global",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification",
+            "http://www.w3id.org/iSeeOnto/aimodel#Regression"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Tabular/DeepSHAPGlobal": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#SHAP",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#global",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#modelSpecific",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904",
+            "http://semanticscience.org/resource/SIO_000449"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0017046"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification",
+            "http://www.w3id.org/iSeeOnto/aimodel#Regression"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow1",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow2"
+        ]
+    },
+    "/Tabular/DeepSHAPLocal": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#SHAP",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#modelSpecific",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904",
+            "http://semanticscience.org/resource/SIO_000449"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0017046"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification",
+            "http://www.w3id.org/iSeeOnto/aimodel#Regression"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow1",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow2"
+        ]
+    },
+    "/Tabular/KernelSHAPLocal": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#SHAP",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904",
+            "http://semanticscience.org/resource/SIO_000449"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Exponential_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification",
+            "http://www.w3id.org/iSeeOnto/aimodel#Regression"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Tabular/KernelSHAPGlobal": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#SHAP",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#global",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#model",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904",
+            "http://semanticscience.org/resource/SIO_000449"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Exponential_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification",
+            "http://www.w3id.org/iSeeOnto/aimodel#Regression"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Tabular/TreeSHAPGlobal": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#SHAP",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#global",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#modelSpecific",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#model",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904",
+            "http://semanticscience.org/resource/SIO_000449"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Ensemble_Method"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification",
+            "http://www.w3id.org/iSeeOnto/aimodel#Regression"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#LightGBM",
+            "http://www.w3id.org/iSeeOnto/explainer#Sklearn",
+            "http://www.w3id.org/iSeeOnto/explainer#XGBoost"
+        ]
+    },
+    "/Tabular/TreeSHAPLocal": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#SHAP",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#modelSpecific",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904",
+            "http://semanticscience.org/resource/SIO_000449"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Ensemble_Method"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification",
+            "http://www.w3id.org/iSeeOnto/aimodel#Regression"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#LightGBM",
+            "http://www.w3id.org/iSeeOnto/explainer#Sklearn",
+            "http://www.w3id.org/iSeeOnto/explainer#XGBoost"
+        ]
+    },
+    "/Tabular/NICE": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Wachter",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "https://purl.org/heals/eo#CounterfactualExplanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000419"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Linearithmic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Text/LIME": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#LIME",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#text",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Linearithmic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483",
+            "http://purl.obolibrary.org/obo/OMIT_0010354"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Images/IntegratedGradients": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Integrated_Gradient_Technique",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#image",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Contrasting_Feature_Importance_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#modelClassSpecific",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000907"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0017046"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow1",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow2"
+        ]
+    },
+    "/Tabular/IREX": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#ALE",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#global",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#modelSpecific",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#model",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Linearithmic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001480"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Text/NLPClassifier": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Data-driven",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#text",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#modelSpecific",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000651",
+            "http://semanticscience.org/resource/SIO_000419"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0010354",
+            "http://purl.obolibrary.org/obo/OMIT_0001480"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Multi-class_Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Sklearn"
+        ]
+    },
+    "/Timeseries/CBRFox": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Knowledge_Extraction",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#time_series",
+        "explanation_type": "https://purl.org/heals/eo#CaseBasedExplanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000904"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0010354",
+            "http://purl.obolibrary.org/obo/OMIT_0001480"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Forecasting"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Images/GradCam": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#GradCam_Technique",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#image",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Saliency_Map",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#modelSpecific",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000081"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Linearithmic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0017046"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#PyTorch",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow1",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow2"
+        ]
+    },
+    "/Images/NearestNeighbours": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Data-driven",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#image",
+        "explanation_type": "http://www.w3id.org/iSeeOnto/explainer#Neighbourhood_Explanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#local",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#modelClassSpecific",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000081"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Exponential_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0017046"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Classification",
+            "http://www.w3id.org/iSeeOnto/aimodel#Regression"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#PyTorch",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow1",
+            "http://www.w3id.org/iSeeOnto/explainer#TensorFlow2"
+        ]
+    },
+    "/Misc/AIModePerformance": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Knowledge_Extraction",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#image",
+        "explanation_type": "https://purl.org/heals/eo#StatisticalExplanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#global",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#model",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000419"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Constant_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "https://purl.org/heals/eo#InductiveTask"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Misc/AIModelPerformance": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#Data-driven",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "https://purl.org/heals/eo#StatisticalExplanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#global",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#model",
+        "presentations": [
+            "http://semanticscience.org/resource/SIO_000419"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Constant_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "https://purl.org/heals/eo#InductiveTask"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    },
+    "/Tabular/PertCF": {
+        "technique": "http://www.w3id.org/iSeeOnto/explainer#SHAP",
+        "dataset_type": "http://www.w3id.org/iSeeOnto/explainer#multivariate",
+        "explanation_type": "https://purl.org/heals/eo#CounterfactualExplanation",
+        "concurrentness": "http://www.w3id.org/iSeeOnto/explainer#post-hoc",
+        "scope": "http://www.w3id.org/iSeeOnto/explainer#cohort",
+        "portability": "http://www.w3id.org/iSeeOnto/explainer#modelClassSpecific",
+        "target": "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "presentations": [
+            "https://purl.org/heals/eo#CounterfactualExplanation"
+        ],
+        "computational_complexity": "http://www.w3id.org/iSeeOnto/explainer#Logarithmic_time",
+        "ai_methods": [
+            "http://purl.obolibrary.org/obo/OMIT_0001483"
+        ],
+        "ai_tasks": [
+            "http://www.w3id.org/iSeeOnto/aimodel#Binary_Classification",
+            "http://www.w3id.org/iSeeOnto/aimodel#Multi-class_Classification"
+        ],
+        "implementation": [
+            "http://www.w3id.org/iSeeOnto/explainer#Any"
+        ]
+    }
+}

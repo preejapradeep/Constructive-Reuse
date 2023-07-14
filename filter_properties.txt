@@ -1,0 +1,89 @@
+{
+    "technique": [
+        "http://www.w3id.org/iSeeOnto/explainer#LIME",
+        "http://www.w3id.org/iSeeOnto/explainer#DisCERN",
+        "http://www.w3id.org/iSeeOnto/explainer#SHAP",
+        "http://www.w3id.org/iSeeOnto/explainer#GradCam_Technique",
+        "http://www.w3id.org/iSeeOnto/explainer#Data-driven",
+        "http://www.w3id.org/iSeeOnto/explainer#ALE",
+        "http://www.w3id.org/iSeeOnto/explainer#Feature_Relevance",
+        "http://www.w3id.org/iSeeOnto/explainer#DiCE",
+        "http://www.w3id.org/iSeeOnto/explainer#Wachter",
+        "http://www.w3id.org/iSeeOnto/explainer#Integrated_Gradient_Technique",
+        "http://www.w3id.org/iSeeOnto/explainer#Anchor",
+        "http://www.w3id.org/iSeeOnto/explainer#Knowledge_Extraction"
+    ],
+    "dataset_type": [
+        "http://www.w3id.org/iSeeOnto/explainer#time_series",
+        "http://www.w3id.org/iSeeOnto/explainer#image",
+        "http://www.w3id.org/iSeeOnto/explainer#text",
+        "http://www.w3id.org/iSeeOnto/explainer#multivariate"
+    ],
+    "explanation_type": [
+        "http://www.w3id.org/iSeeOnto/explainer#Anchor_Explanation",
+        "https://purl.org/heals/eo#CounterfactualExplanation",
+        "http://www.w3id.org/iSeeOnto/explainer#Contrasting_Feature_Importance_Explanation",
+        "https://purl.org/heals/eo#CaseBasedExplanation",
+        "http://www.w3id.org/iSeeOnto/explainer#Saliency_Map",
+        "http://www.w3id.org/iSeeOnto/explainer#Feature_Influence_Explanation",
+        "https://purl.org/heals/eo#StatisticalExplanation",
+        "http://www.w3id.org/iSeeOnto/explainer#Neighbourhood_Explanation"
+    ],
+    "concurrentness": [
+        "http://www.w3id.org/iSeeOnto/explainer#post-hoc"
+    ],
+    "scope": [
+        "http://www.w3id.org/iSeeOnto/explainer#local",
+        "http://www.w3id.org/iSeeOnto/explainer#cohort",
+        "http://www.w3id.org/iSeeOnto/explainer#global"
+    ],
+    "portability": [
+        "http://www.w3id.org/iSeeOnto/explainer#modelClassSpecific",
+        "http://www.w3id.org/iSeeOnto/explainer#model-agnostic",
+        "http://www.w3id.org/iSeeOnto/explainer#modelSpecific"
+    ],
+    "target": [
+        "http://www.w3id.org/iSeeOnto/explainer#prediction",
+        "http://www.w3id.org/iSeeOnto/explainer#model"
+    ],
+    "presentations": [
+        "http://semanticscience.org/resource/SIO_000449",
+        "http://semanticscience.org/resource/SIO_000651",
+        "http://semanticscience.org/resource/SIO_000904",
+        "https://purl.org/heals/eo#CounterfactualExplanation",
+        "http://semanticscience.org/resource/SIO_000907",
+        "http://semanticscience.org/resource/SIO_000419",
+        "http://semanticscience.org/resource/SIO_000081"
+    ],
+    "computational_complexity": [
+        "http://www.w3id.org/iSeeOnto/explainer#Quadratic_time",
+        "http://www.w3id.org/iSeeOnto/explainer#Linearithmic_time",
+        "http://www.w3id.org/iSeeOnto/explainer#Constant_time",
+        "http://www.w3id.org/iSeeOnto/explainer#Exponential_time",
+        "http://www.w3id.org/iSeeOnto/explainer#Logarithmic_time"
+    ],
+    "ai_methods": [
+        "http://purl.obolibrary.org/obo/OMIT_0001480",
+        "http://www.w3id.org/iSeeOnto/aimodel#Ensemble_Method",
+        "http://purl.obolibrary.org/obo/OMIT_0010354",
+        "http://purl.obolibrary.org/obo/OMIT_0017046",
+        "http://purl.obolibrary.org/obo/OMIT_0001483"
+    ],
+    "ai_tasks": [
+        "http://www.w3id.org/iSeeOnto/aimodel#Binary_Classification",
+        "http://www.w3id.org/iSeeOnto/aimodel#Classification",
+        "http://www.w3id.org/iSeeOnto/aimodel#Regression",
+        "https://purl.org/heals/eo#InductiveTask",
+        "http://www.w3id.org/iSeeOnto/aimodel#Multi-class_Classification",
+        "http://www.w3id.org/iSeeOnto/aimodel#Forecasting"
+    ],
+    "implementation": [
+        "http://www.w3id.org/iSeeOnto/explainer#TensorFlow2",
+        "http://www.w3id.org/iSeeOnto/explainer#LightGBM",
+        "http://www.w3id.org/iSeeOnto/explainer#XGBoost",
+        "http://www.w3id.org/iSeeOnto/explainer#TensorFlow1",
+        "http://www.w3id.org/iSeeOnto/explainer#PyTorch",
+        "http://www.w3id.org/iSeeOnto/explainer#Any",
+        "http://www.w3id.org/iSeeOnto/explainer#Sklearn"
+    ]
+}

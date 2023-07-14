@@ -1,0 +1,595 @@
+{
+    "tree_1": {
+        "tree_json": [
+            {
+                "version": "0.1.0",
+                "scope": "tree",
+                "id": "33def3ec-31a8-47c1-856c-7fd724718df2",
+                "Instance": "Explanation Experience",
+                "description": "",
+                "root": "546f5cee-68b0-4b90-85be-786b9957d03a",
+                "properties": {},
+                "nodes": {
+                    "5112868d-f790-4665-ab3e-18a36a857363": {
+                        "id": "5112868d-f790-4665-ab3e-18a36a857363",
+                        "Concept": "Sequence",
+                        "Instance": "Sequence",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": -60,
+                            "y": 168
+                        },
+                        "firstChild": {
+                            "Id": "85b9b22e-1b0a-4a9b-81a9-83952d27271a",
+                            "Next": {
+                                "Id": "5829d6db-5011-4ad8-846a-ab8452c6be46",
+                                "Next": null
+                            }
+                        }
+                    },
+                    "546f5cee-68b0-4b90-85be-786b9957d03a": {
+                        "id": "546f5cee-68b0-4b90-85be-786b9957d03a",
+                        "Concept": "Priority",
+                        "Instance": "Priority",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": -60,
+                            "y": 84
+                        },
+                        "firstChild": {
+                            "Id": "5112868d-f790-4665-ab3e-18a36a857363",
+                            "Next": null
+                        }
+                    },
+                    "85b9b22e-1b0a-4a9b-81a9-83952d27271a": {
+                        "id": "85b9b22e-1b0a-4a9b-81a9-83952d27271a",
+                        "Concept": "User Question",
+                        "Instance": "User Question",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": -192,
+                            "y": 324
+                        },
+                        "params": {
+                            "Question": {
+                                "key": "Question",
+                                "value": "Why does the system predict category Y for image X?"
+                            }
+                        }
+                    },
+                    "5829d6db-5011-4ad8-846a-ab8452c6be46": {
+                        "id": "5829d6db-5011-4ad8-846a-ab8452c6be46",
+                        "Concept": "Explanation Method",
+                        "Instance": "/Images/IntegratedGradients",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": 60,
+                            "y": 324
+                        },
+                        "params": {
+                            "output_classes": {
+                                "key": "output_classes",
+                                "value": "[ ]",
+                                "default": "[ ]",
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Array of integers representing the classes to be explained. Defaults to class 1.",
+                                "type": "text"
+                            },
+                            "top_classes": {
+                                "key": "top_classes",
+                                "value": 1,
+                                "default": 1,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+                                "type": "number"
+                            },
+                            "num_features": {
+                                "key": "num_features",
+                                "value": 10,
+                                "default": 10,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Integer representing the maximum number of features to be included in the explanation.",
+                                "type": "number"
+                            },
+                            "png_width": {
+                                "key": "png_width",
+                                "value": 1000,
+                                "default": 1000,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Width (in pixels) of the png image containing the explanation.",
+                                "type": "number"
+                            },
+                            "png_height": {
+                                "key": "png_height",
+                                "value": 400,
+                                "default": 400,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Height (in pixels) of the png image containing the explanation.",
+                                "type": "number"
+                            }
+                        }
+                    }
+                },
+                "display": {
+                    "camera_x": 937,
+                    "camera_y": 472,
+                    "camera_z": 1,
+                    "x": -60,
+                    "y": 0
+                }
+            }
+        ],
+        "tree_graph": {
+            "nodes": [
+                "r",
+                "Priority",
+                "Sequence",
+                "User Question",
+                "/Images/IntegratedGradients"
+            ],
+            "adj": [
+                [
+                    1
+                ],
+                [
+                    2
+                ],
+                [
+                    3,
+                    4
+                ],
+                [],
+                []
+            ]
+        }
+    },
+    "tree_4": {
+        "tree_json": [
+            {
+                "version": "0.1.0",
+                "scope": "tree",
+                "id": "33def3ec-31a8-47c1-856c-7fd724718df2",
+                "Instance": "Explanation Experience",
+                "description": "",
+                "root": "546f5cee-68b0-4b90-85be-786b9957d03a",
+                "properties": {},
+                "nodes": {
+                    "5112868d-f790-4665-ab3e-18a36a857363": {
+                        "id": "5112868d-f790-4665-ab3e-18a36a857363",
+                        "Concept": "Sequence",
+                        "Instance": "Sequence",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": -60,
+                            "y": 168
+                        },
+                        "firstChild": {
+                            "Id": "85b9b22e-1b0a-4a9b-81a9-83952d27271a",
+                            "Next": {
+                                "Id": "5829d6db-5011-4ad8-846a-ab8452c6be46",
+                                "Next": null
+                            }
+                        }
+                    },
+                    "546f5cee-68b0-4b90-85be-786b9957d03a": {
+                        "id": "546f5cee-68b0-4b90-85be-786b9957d03a",
+                        "Concept": "Priority",
+                        "Instance": "Priority",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": -60,
+                            "y": 84
+                        },
+                        "firstChild": {
+                            "Id": "5112868d-f790-4665-ab3e-18a36a857363",
+                            "Next": null
+                        }
+                    },
+                    "85b9b22e-1b0a-4a9b-81a9-83952d27271a": {
+                        "id": "85b9b22e-1b0a-4a9b-81a9-83952d27271a",
+                        "Concept": "User Question",
+                        "Instance": "User Question",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": -192,
+                            "y": 324
+                        },
+                        "params": {
+                            "Question": {
+                                "key": "Question",
+                                "value": "Why does the system predict RDR for image X?"
+                            }
+                        }
+                    },
+                    "5829d6db-5011-4ad8-846a-ab8452c6be46": {
+                        "id": "5829d6db-5011-4ad8-846a-ab8452c6be46",
+                        "Concept": "Explanation Method",
+                        "Instance": "/Images/IntegratedGradients",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": 60,
+                            "y": 324
+                        },
+                        "params": {
+                            "output_classes": {
+                                "key": "output_classes",
+                                "value": "[ ]",
+                                "default": "[ ]",
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Array of integers representing the classes to be explained. Defaults to class 1.",
+                                "type": "text"
+                            },
+                            "top_classes": {
+                                "key": "top_classes",
+                                "value": 1,
+                                "default": 1,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Integer representing the number of classes with the highest prediction probability to be explained. Overrides 'output_classes' if provided.",
+                                "type": "number"
+                            },
+                            "num_features": {
+                                "key": "num_features",
+                                "value": 10,
+                                "default": 10,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Integer representing the maximum number of features to be included in the explanation.",
+                                "type": "number"
+                            },
+                            "png_width": {
+                                "key": "png_width",
+                                "value": 1000,
+                                "default": 1000,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Width (in pixels) of the png image containing the explanation.",
+                                "type": "number"
+                            },
+                            "png_height": {
+                                "key": "png_height",
+                                "value": 400,
+                                "default": 400,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Height (in pixels) of the png image containing the explanation.",
+                                "type": "number"
+                            }
+                        }
+                    }
+                },
+                "display": {
+                    "camera_x": 937,
+                    "camera_y": 472,
+                    "camera_z": 1,
+                    "x": -60,
+                    "y": 0
+                }
+            }
+        ],
+        "tree_graph": {
+            "nodes": [
+                "r",
+                "Priority",
+                "Sequence",
+                "User Question",
+                "/Images/IntegratedGradients"
+            ],
+            "adj": [
+                [
+                    1
+                ],
+                [
+                    2
+                ],
+                [
+                    3,
+                    4
+                ],
+                [],
+                []
+            ]
+        }
+    },
+    "tree_5": {
+        "tree_json": [
+            {
+                "version": "0.1.0",
+                "scope": "tree",
+                "id": "2a1e79cf-2ccd-47d7-96a3-768047304a85",
+                "Instance": "Explanation Experience",
+                "description": "",
+                "root": "89d03d85-d7dd-4dfd-be74-1d992d5bce56",
+                "properties": {},
+                "nodes": {
+                    "eccbcfc3-74ba-48b0-8c8a-fd8790f0300c": {
+                        "id": "eccbcfc3-74ba-48b0-8c8a-fd8790f0300c",
+                        "Concept": "Sequence",
+                        "Instance": "Sequence",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": -192,
+                            "y": 108
+                        },
+                        "firstChild": {
+                            "Id": "7e6f46df-dd97-47dd-8c60-9e6d3f479414",
+                            "Next": {
+                                "Id": "abc690dc-1c8e-4e45-8488-8c9fcbb4bb2b",
+                                "Next": null
+                            }
+                        }
+                    },
+                    "89d03d85-d7dd-4dfd-be74-1d992d5bce56": {
+                        "id": "89d03d85-d7dd-4dfd-be74-1d992d5bce56",
+                        "Concept": "Priority",
+                        "Instance": "Priority",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": -192,
+                            "y": 0
+                        },
+                        "firstChild": {
+                            "Id": "eccbcfc3-74ba-48b0-8c8a-fd8790f0300c",
+                            "Next": null
+                        }
+                    },
+                    "7e6f46df-dd97-47dd-8c60-9e6d3f479414": {
+                        "id": "7e6f46df-dd97-47dd-8c60-9e6d3f479414",
+                        "Concept": "User Question",
+                        "Instance": "User Question",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": -324,
+                            "y": 288
+                        },
+                        "params": {
+                            "Question": {
+                                "key": "Question",
+                                "value": "What patterns contributed to the system prediction?"
+                            }
+                        }
+                    },
+                    "abc690dc-1c8e-4e45-8488-8c9fcbb4bb2b": {
+                        "id": "abc690dc-1c8e-4e45-8488-8c9fcbb4bb2b",
+                        "Concept": "Variant",
+                        "Instance": "Variant",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": 0,
+                            "y": 264
+                        },
+                        "firstChild": {
+                            "Id": "98489712-951e-4685-8883-76c2bcd9e634",
+                            "Next": {
+                                "Id": "fad46100-dcf8-42fe-8244-39e383098d32",
+                                "Next": null
+                            }
+                        }
+                    },
+                    "98489712-951e-4685-8883-76c2bcd9e634": {
+                        "id": "98489712-951e-4685-8883-76c2bcd9e634",
+                        "Concept": "Explanation Method",
+                        "Instance": "/Images/IntegratedGradients",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": -132,
+                            "y": 372
+                        },
+                        "params": {
+                            "target_class": {
+                                "key": "target_class",
+                                "value": null,
+                                "default": null,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Integer denoting the desired class for the computation of the attributions. Ignore for regression models. Defaults to the predicted class of the instance.",
+                                "type": "number"
+                            },
+                            "method": {
+                                "key": "method",
+                                "value": "gausslegendre",
+                                "default": "gausslegendre",
+                                "range": [
+                                    "gausslegendre",
+                                    "riemann_left",
+                                    "riemann_right",
+                                    "riemann_middle",
+                                    "riemann_trapezoid"
+                                ],
+                                "required": "false",
+                                "description": "Method for the integral approximation. The methods available are: 'riemann_left', 'riemann_right', 'riemann_middle', 'riemann_trapezoid', 'gausslegendre'. Defaults to 'gausslegendre'.",
+                                "type": "select"
+                            },
+                            "n_steps": {
+                                "key": "n_steps",
+                                "value": 10,
+                                "default": 10,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Number of step in the path integral approximation from the baseline to the input instance. Defaults to 10.",
+                                "type": "number"
+                            },
+                            "internal_batch_size": {
+                                "key": "internal_batch_size",
+                                "value": 100,
+                                "default": 100,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Batch size for the internal batching. Defaults to 100.",
+                                "type": "number"
+                            },
+                            "png_width": {
+                                "key": "png_width",
+                                "value": 1200,
+                                "default": 1200,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Width (in pixels) of the png image containing the explanation.",
+                                "type": "number"
+                            },
+                            "png_height": {
+                                "key": "png_height",
+                                "value": 600,
+                                "default": 600,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Height (in pixels) of the png image containing the explanation.",
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "fad46100-dcf8-42fe-8244-39e383098d32": {
+                        "id": "fad46100-dcf8-42fe-8244-39e383098d32",
+                        "Concept": "Explanation Method",
+                        "Instance": "/Images/NearestNeighbours",
+                        "description": "",
+                        "properties": {},
+                        "display": {
+                            "x": 120,
+                            "y": 372
+                        },
+                        "params": {
+                            "no_neighbours": {
+                                "key": "no_neighbours",
+                                "value": 3,
+                                "default": 3,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "number of neighbours returned as an integer; default is 3.",
+                                "type": "number"
+                            },
+                            "png_width": {
+                                "key": "png_width",
+                                "value": 1200,
+                                "default": 1200,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Width (in pixels) of the png image containing the explanation.",
+                                "type": "number"
+                            },
+                            "png_height": {
+                                "key": "png_height",
+                                "value": 600,
+                                "default": 600,
+                                "range": [
+                                    null,
+                                    null
+                                ],
+                                "required": "false",
+                                "description": "Height (in pixels) of the png image containing the explanation.",
+                                "type": "number"
+                            }
+                        }
+                    }
+                },
+                "display": {
+                    "camera_x": 720,
+                    "camera_y": 394.5,
+                    "camera_z": 1,
+                    "x": -192,
+                    "y": -108
+                }
+            }
+        ],
+        "tree_graph": {
+            "nodes": [
+                "r",
+                "Priority",
+                "Sequence",
+                "User Question",
+                "Variant",
+                "/Images/IntegratedGradients",
+                "/Images/NearestNeighbours"
+            ],
+            "adj": [
+                [
+                    1
+                ],
+                [
+                    2
+                ],
+                [
+                    3,
+                    4
+                ],
+                [],
+                [
+                    5,
+                    6
+                ],
+                [],
+                []
+            ]
+        }
+    }
+}
