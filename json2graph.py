@@ -14,7 +14,7 @@ def get_parent(parent_child_dict, child_index):
             return parent+1
     return None
 
-def find_parent(node_id, node, parent_child_dict, id_list):
+def find_parent(node_id, node, parent_child_dict, id_list, nodes_dict):
     parent_index, parent_instance = get_index(node_id, nodes_dict, id_list)
     
     if 'firstChild' in node:
@@ -46,12 +46,12 @@ def create_parent_child_dict(nodes_dict, node_list, id_list):
         node_index = i
         node_id =id_list[node_index-1]
         node = nodes_dict[node_id]
-        find_parent(node_id, node, parent_child_dict, id_list)
+        find_parent(node_id, node, parent_child_dict, id_list, nodes_dict)
     
     return parent_child_dict
 
 
-def print_node_instances(node_id, nodes_dict): 
+def print_node_instances(node_id, nodes_dict, node_list, id_list): 
     node = nodes_dict[node_id]
     node_instance = node['Instance']
     if node_instance is None:
@@ -61,12 +61,12 @@ def print_node_instances(node_id, nodes_dict):
 
     if 'firstChild' in node:
         first_child_id = node['firstChild']['Id']
-        print_node_instances(first_child_id, nodes_dict)
+        print_node_instances(first_child_id, nodes_dict, node_list, id_list)
         next_child = node['firstChild'].get('Next')
 
         while next_child is not None:
             next_child_id = next_child['Id']
-            print_node_instances(next_child_id, nodes_dict)
+            print_node_instances(next_child_id, nodes_dict, node_list, id_list)
             next_child = next_child.get('Next')
 
     return node_list, id_list
@@ -83,45 +83,55 @@ def build_adjacency_list(node_list, parent_child_dict):
     return adjacency_list
 
 
+# function to translate the case solution to graph structure 
+# This function must work for all the cases and the query 
+# TODO
+def translateCasesFromJSONtoGraph(case):
+  tree_dict, nodes_dict, parent_child_dict = {},{},{}
+  node_list = ['r'] # Added 'r' as the default root node in the node list
+  id_list =[] #List of node id's 
+         
+
+  for idx, obj in enumerate(case, start=1):
+      trees = obj['data']['trees']
+      # Get the 'nodes' from 'trees'
+      for tree in trees:
+          nodes = tree.get('nodes', {})
+          nodes_dict.update(nodes)
+          # Get the root node
+          root_node_id = tree.get('root')    
+
+      # Call the recursive function to print node instances
+      node_list, id_list= print_node_instances(root_node_id, nodes_dict, node_list = ['r'], id_list =[])
+      # Call the function to create the parent_child dictionary
+      parent_child_dict = create_parent_child_dict(nodes_dict, node_list, id_list)
+      # Build the adjacency list from the behavior tree
+      adjacency_list = build_adjacency_list(node_list, parent_child_dict)
+      
+      tree_key = f'tree_{idx}'
+    #   tree_dict[tree_key] = trees
+      tree_dict[tree_key] = {
+              'tree_json': trees,
+              'tree_graph': {
+                  'nodes': node_list,
+                  'adj': adjacency_list
+              }
+      }
+
+  return tree_dict
+
 # Load case base from json file
-with open("BT_complicated.json", "r") as f:
-    data = json.load(f)
+with open("apioutput.json", "r") as f:
+    case = json.load(f)
+tree_dict = translateCasesFromJSONtoGraph(case) 
 
-tree_dict, parent_child_dict = {}, {}
+# Specify the file path and name
+file_path = "tree_output.txt"
 
-for idx, obj in enumerate(data, start=1):
-    trees = obj['data']['trees']
-    # Get the 'nodes'
-    for tree in trees:
-        nodes_dict = {}
-        nodes = tree.get('nodes', {})
-        nodes_dict.update(nodes)
-        # Get the root node
-        root_node_id = tree.get('root')    
-
-    node_list = ['r']
-    id_list =[]
-
-    # Call the recursive function to print node instances
-    node_list, id_list= print_node_instances(root_node_id, nodes_dict)
-    parent_child_dict = create_parent_child_dict(nodes_dict, node_list, id_list)
-    # print('\nFinal parent_child_dict:', parent_child_dict)
-
-    # Build the adjacency list from the behavior tree
-    adjacency_list = build_adjacency_list(node_list, parent_child_dict)
-
-    tree_key = f'tree_{idx}'
-    tree_dict[tree_key] = trees
-    tree_dict[tree_key] = {
-            'tree_json': trees,
-            'tree_graph': {
-                'nodes': node_list,
-                'adj': adjacency_list
-            }
-    }
-    
-# Print the dictionary
-print('\n',tree_dict)
+# Open the file in write mode
+with open(file_path, "w") as file:
+    # Write the dictionary as a JSON string
+    json.dump(tree_dict, file, indent=4)
 
 
 # Output:
